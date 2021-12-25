@@ -14,6 +14,7 @@ public class Decompress{
         output = new BitOutputStream(out);
     }
     
+    //trying this again
     public int decompress(IHuffViewer viewer) throws IOException {
         int magicNumber = input.readBits(IHuffConstants.BITS_PER_INT);
         if(magicNumber != IHuffConstants.MAGIC_NUMBER) {
